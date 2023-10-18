@@ -144,6 +144,7 @@ class QRScanner : CDVPlugin, AVCaptureMetadataOutputObjectsDelegate {
                         self.backCamera = camera
                         try camera.lockForConfiguration()
                         camera.focusMode = .continuousAutoFocus
+                        camera.videoZoomFactor = 1.5
                         camera.unlockForConfiguration()
                     }
                 }
